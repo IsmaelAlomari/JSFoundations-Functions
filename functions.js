@@ -22,13 +22,13 @@ greet("isamel")
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  if(n % 2 === 0) {
-    return false ;
+  if(n%2 === 0) {
+    return false
 }
 else return true
   // Your code here
 }
-
+console.log (isOdd(8))
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -60,8 +60,10 @@ console.log(oddsSmallerThan(25))
  */
 function squareOrDouble(n) {
   // Your code here
-  if (isOdd(n)) return n * n;
-}
+  if (n%2 === 0) {
+    return n * 2
+  } else return n * n
+} 
 console.log(squareOrDouble(9))
 console.log(squareOrDouble(27))
 
